@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0f172a;
+    color: white;
+    min-height: 100vh;
+    font-family: sans-serif, 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px;
+}
+
+header > nav {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+header > section {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.whiteLink {
+    color: white;;
+}
+
+.greyLink {
+    color: lightgrey;
+}
+
+a {
+    text-decoration: unset;
+    font: 0.8em;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    padding: 14px;
+}
+
+#headerLogo {
+    font-size: 5em;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+.searchBox {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    gap: 14px;
+    border: 1px solid lightgrey;
+    padding: 14px;
+    border-radius: 24px;
+}
+
+.searchBox:hover {
+    border-color: transparent;
+    background: darkgrey;
+}
+
+input {
+    background: transparent;
+    outline: none;
+    border: unset;
+    color: white;
+    flex: 1;
+}
+
+.buttonsContainer {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.buttonsContainer button {
+    padding: 10px 14px;
+    border-radius: 4px;
+    border: unset;
+    background-color: rgb(77, 65, 65);
+    color: white;
+}
+
+.buttonsContainer button:hover {
+    background-color: rgb(48, 41, 41);
+}
+
+#languageOptions {
+    font-size: 0.9em;
+}
+
+#languageOptions span {
+    color: cyan;
+}
+
+#languageOptions span:hover {
+    text-decoration: underline;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+}
+
+
+footer > section {
+    padding: 14px;
+}
+
+footer > section:last-child {
+    border-top: 1px solid rgb(114, 113, 113);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footerLinks {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+footer > section:last-child > div > a {
+    text-decoration: unset;
+    cursor: pointer;
+}
+
+footer > section:last-child > div > a:hover {
+    text-decoration: underline;
+    color: darkgray;
+}
+
+@media (min-width: 540px) {
+    footer > section:last-child {
+        flex-direction: row;
+    }
+}
